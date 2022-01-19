@@ -60,10 +60,6 @@ interface CoinInterface {
     type: string,
 }
 
-interface RouterState {
-    name: string;
-    }
-    
 
 function Coins() {
     const [coins,setCoins] = useState<CoinInterface[]>([]);
