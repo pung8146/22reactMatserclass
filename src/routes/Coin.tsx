@@ -74,7 +74,7 @@ const Tab = styled.span<{ isActive: boolean }>`
 
 
 interface Params {
-    coinId: String;
+    coinId: string;
 }
 
 interface RouterState {
@@ -145,8 +145,8 @@ function Coin() {
     const { state } = useLocation() as RouterState;
     const [info, setInfo] = useState<InfoData>();
     const [priceInfo, setPriceInfo] = useState<PriceData>();
-    const priceMatch = useMatch("/coinId/price");
-    const chartMatch = useMatch("/coinId/chart");
+    const priceMatch = useMatch("/:coinId/price");
+    const chartMatch = useMatch("/:coinId/chart");
     useEffect(() => {
         (async () => {
             const infoData = await (
