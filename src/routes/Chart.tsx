@@ -36,7 +36,7 @@ function Chart({ coinId }: ChartProps) {
               data:[
               {
                 x: new Date(1538782200000),
-                y: data?.map((price => price.open))
+                y: data?.map((price) => price.open)
               },
               {
                 x: new Date(1538784000000),
