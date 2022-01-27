@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import Chart from "./Chart";
 import Price from "./Price";
 import { Link } from "react-router-dom";
-import { fetchCoinInfo, fetchCoinTickers } from '../api';
+import { fetchCoinInfo, fetchCoinTickers, } from '../api';
 
 const Container = styled.div`
     padding: 0px 20px;
@@ -215,7 +215,7 @@ function Coin() {
 
 
                     <Routes>
-                        <Route path="chart" element={<Chart />} />
+                        <Route path="chart" element={<Chart coinId={coinId} />} />
                         <Route path="price" element={<Price />} />
                     </Routes>
                 </>
