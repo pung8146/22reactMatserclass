@@ -12,7 +12,7 @@ function Router({}:IRouterProps) {
         <Routes>
             <Route path="/" element={<Coins/>} ></Route>
             <Route path="/:coinId/*" element={<Coin/>}></Route>
-            <Route path="chart" element={<Chart coinId={''} isDark={false} />} />
+            <Route path="chart" element={<Chart coinId={''} />} />
             <Route path="price" element={<Price />} />
         </Routes>
     </BrowserRouter>
